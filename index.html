@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Handling events in AngularJS</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="scripts/angular.js"></script>
+	<script src="scripts/Scripts.js"></script>
+	<script src="scripts/Filters.js"></script>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+	
+	
+	<br>
+	<br>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>Salary</th>
+					
+				</tr>
+			</thead>
+
+			<tbody>
+			
+				<tr ng-repeat="employee in employees">
+
+				
+
+					<td>{{employee.name}}</td>
+					<td>{{employee.gender | gender }}</td>
+					<td>{{employee.salary}} </td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
